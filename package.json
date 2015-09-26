@@ -1,0 +1,10 @@
+{
+  "name": "gearlyst",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.13.3",
+    "body-parser": "^1.14.0",
+    "mongoose": "^4.1.8",
+    "method-override": "^2.3.5"
+  }
+}

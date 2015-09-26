@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="gearlyst">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+
+	</head>
+	<body>
+		<div ng-controller="itemsController">
+			<h1>There are {{items.length}} items in your list</h1>
+			<ul>
+				<li ng-repeat="item in items">
+					{{item.name}}
+				</li>
+			</ul>
+			<form ng-submit="createItem()">
+				<input type="text" placeholder="Item Name" ng-model="itemName"></input>
+				<button type="submit">Add</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript" src="/js/controllers/items-controller.js"></script>
+	</body>
+</html>
